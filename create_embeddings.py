@@ -12,7 +12,7 @@ model_for_text, model_cfg = create_model(
     device = torch.device('cuda:0'))
 
 # Define your directory path here
-directory_path = '/path/to/your/directory/'
+directory_path = './NIGENS_cmd_pkls/'
 
 # List of list names
 list_names = [
@@ -50,3 +50,4 @@ for list_name in list_names:
     embeddings[list_name] = text_embed
 
 # Now, embeddings dictionary contains the embeddings for each of the command lists
+print("Embeddings created")
